@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\CariMahasiswaController;
 use Illuminate\Http\Request;
 
 /*
@@ -18,3 +19,5 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('mahasiswas', MahasiswaController::class);
